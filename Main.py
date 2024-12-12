@@ -26,9 +26,16 @@ def sniffing(interface):
     # Filter for the sniffer, pretty raw at the moment however you can add more from the Scapy docs.
     scapy.sniff(iface=interface, store=False, prn=process_packet, filter="tcp")
 
+
+"""
+Just to spectify, if you attempt to run this code an error will arise due to the fact that the "sniffing()" statement requires YOUR unique network identifier.
+
+This can be done by using the "SCAPY test.py" program. This program will run and create a list of all network identifiers.
+
+However, you dont have to do this you can just enter 'sniffer(Wi-Fi)', 'sniffer(ethernet)' or 'sniffer(eth0)'.
+"""
+
 # Calling the sniffing tool
-"""
-Just to spectify, if youre using 
-"""
 sniffing(r'\Device\NPF_{ED2197AA-3F1E-4B29-AB1A-A50E1898FB7E}')
+
 
