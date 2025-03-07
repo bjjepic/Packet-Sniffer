@@ -33,6 +33,7 @@ Just to spectify, if you attempt to run this code an error will arise due to the
 This can be done by using the "SCAPY test.py" program. This program will run and create a list of all network identifiers.
 
 However, you dont have to do this you can just enter 'sniffer('Wi-Fi')', 'sniffer('ethernet')' or 'sniffer('eth0')'.
+
 """
 
 # Calling the sniffing tool
